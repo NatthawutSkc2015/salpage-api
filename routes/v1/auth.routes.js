@@ -1,0 +1,11 @@
+const router =         require('express').Router()
+const AuthController = require('../../controllers/auth.controller')
+router.post('/register',        AuthController.register)
+router.post('/login',           AuthController.login)
+router.post('/forgot-password', AuthController.forgot_password)
+router.post('/change-password', AuthController.chang_password)
+router.get('/logout',           AuthController.logout)
+router.get('/user-info',        AuthController.userInfo)
+router.post('/refreshToken',    AuthController.refreshToken)
+router.post('/check-token-change-password', AuthController.checkTokenChangePassword)
+module.exports = router

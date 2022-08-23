@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+  <title></title>
+  <meta name="description" content="Reset Password Email Template.">
+  <style type="text/css">
+    .container{
+      background-color: #e8e8e8;
+      padding: 150px 0 150px 0;
+    }
+    .box{
+      border: 1px solid #d2cfcf;
+      margin:0 auto;
+      border-radius:10px;
+      background-color: #f3f3f3;
+      text-align:center;
+      padding-bottom:2em;
+    }
+    .box-logo{
+      margin: 4em 0 2.5em 0;
+    }
+    .box-logo img{
+      width: 140px;
+      height: 140px;
+    }
+    .link_to_verlify{
+      display:inline-block;
+      padding: 5px;
+      text-decoration :none;
+      margin-bottom: 3em;
+      border: 1px solid #d2cfcf;
+      border-radius:4px;
+      margin-top: 15px;
+      color: #e87171;
+      transition: 0.3s;
+    }
+    .link_to_verlify:hover{
+      background-color: #e87171;
+      color: #FFF;
+      border:1px solid #e87171;
+      transition: 0.3s;
+    }
+    h1,h2,h3,h4,h5,h6{
+      line-height: 0.5;
+    }
+    .link-web{
+      text-align:center; 
+      font-weight:bold; 
+      font-size: 18px; 
+      padding-top:15px;
+    }
+    .link-web a{
+      color: #ec7575;
+      text-decoration:none;
+      font-size: 15px;
+    }
+    .link-web a:hover{
+      color: #FF0000;
+    }
+    @media(min-width:1000px){
+      .box{
+        width: 55%;
+      }
+    }
+  </style>
+</head>
+
+<body class="container">
+  <!-- Box -->
+  <div class="box">
+    <figure class="box-logo">
+      <img src="https://juad.ktdev.site/backend/assets/images/logo.png?v=1" class="img-logo">
+    </figure>
+    <h2>อีเมลแจ้งเตือนการจอง</h2>
+    <p style="line-height:1.4; padding:0 2em; font-size: 16px; margin:0;"><?=@$message;?></p>
+    <b style="color: #ec7575;line-height: 10px;font-size: 15px;border-bottom: 1px solid #e8e8e8;padding-bottom: 0.5em;">หมายเหตุ : ทางร้านขอสงวนสิทธิ์ไว้ให้ลูกค้าท่านอื่นหากไม่ชำระค่าบริการจองภายใน 1 ชั่วโมง</b>
+    <p style="color:#35a0ec;font-size: 17px;"><b>อีเมลนี้ถูกส่งโดยระบบบริหารจัดการ JaudCafe.com</b></p>
+  </div>
+  <div class="link-web"><a href="https://www.jaudcafe.com">www.jaudcafe.com</a></div>
+  <!-- /Box -->
+</body>
+
+</html>
